@@ -1,14 +1,122 @@
 :root{
 	--primary-color-dark-cyan: hsl(158, 36%, 37%);
+	--primary-color-very-dark-cyan: hsl(156, 42%, 18%);
 	--primary-color-cream: hsl(30, 38%, 92%);
 	--neutral-color-very-dark-blue: hsl(212, 21%, 14%);
 	--neutral-color-dark-grayish-blue: hsl(228, 12%, 48%);
 	--neutral-color-white: hsl(0, 0%, 100%);
-	--font-size: clamp(7px, 0.7vw, 14px);
+	--font-size-one: clamp(7px, 1.7vw, 14px);
+	--font-size-two: clamp(15px, 3vw, 35px);
+	--border: 10px;	
+	--margin-bottom: 20px;
+	--font-one:'Montserrat', sans-serif;
+	--font-two: 'Fraunces', serif;
 }
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	border: none;
+}
+
+body{
+	background-color: var(--primary-color-cream);
+}
+
+main{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{	
+	width: 600px;
+	height: 450px;
+	display: flex;
+	border-radius: var(--border);
+	color: var(--neutral-color-dark-grayish-blue);	
+	overflow: hidden;
+}
+
+.product-image-desktop{
+	height: 100%;
+}
+
+.container-product{
+	background-color: var(--neutral-color-white);
+	height: 100%;
+	padding: 35px;
+	font-family: var(--font-one);
+}
+
+.product-type{
+	font-size: var(--font-size-one);
+	text-transform: uppercase;	
+	font-weight: 500;
+	color: var(--neutral-color-dark-grayish-blue);
+	margin-bottom: var(--margin-bottom);
+	letter-spacing: 5px;
+}
+
+.product-title{
+	font-size: var(--font-size-two);
+	font-family: var(--font-two);
+	margin-bottom: var(--margin-bottom);
+	color: black;
+	font-weight: 700;
+	line-height: 35px;
+}
+
+.product-discription{
+	font-size: var(--font-size-one);	
+	font-weight: 500;
+	line-height: 25px;
+	margin-bottom: var(--margin-bottom);
+}
+
+.prices{	
+	display: flex;
+	align-items: center;
+	font-family: var(--font-two);
+	margin-bottom: var(--margin-bottom);
+}
+.price-discount{
+	margin-right: 15px;
+	font-size: var(--font-size-two);
+	font-weight: 700;
+	color: var(--primary-color-dark-cyan);
+}
+
+.price-normal{
+	font-family: var(--font-size-one);
+	text-decoration: line-through;
+	font-size: var(--font-size-one);
+}
+
+.btn-car{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: var(--margin-bottom);
+	border-radius: var(--border);
+	background-color: var(--primary-color-dark-cyan);
+	color: var(--neutral-color-white);
+	padding: 15px;
+	width: 100%;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.btn-car:hover{
+	background-color: var(--primary-color-very-dark-cyan);
+}
+
+.btn-car:focus{
+	background-color: var(--neutral-color-very-dark-blue);
+}
+
+svg.car-icon{
+	margin-right: 10px;
 }
