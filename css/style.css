@@ -5,10 +5,11 @@
 	--neutral-color-very-dark-blue: hsl(212, 21%, 14%);
 	--neutral-color-dark-grayish-blue: hsl(228, 12%, 48%);
 	--neutral-color-white: hsl(0, 0%, 100%);
-	--font-size-one: clamp(7px, 1.7vw, 14px);
-	--font-size-two: clamp(15px, 3vw, 35px);
+	--font-size-one: clamp(14px, 1.7vw, 14px);
+	--font-size-two: clamp(30px, 3vw, 35px);
 	--border: 10px;	
-	--margin-bottom: 20px;
+	--margin: 20px;	
+	--margin-mobile: 10px;
 	--font-one:'Montserrat', sans-serif;
 	--font-two: 'Fraunces', serif;
 }
@@ -32,23 +33,34 @@ main{
 }
 
 .container{	
-	width: 600px;
-	height: 450px;
+	max-width: 600px;
+	min-height: 450px;
 	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	border-radius: var(--border);
-	color: var(--neutral-color-dark-grayish-blue);	
+	margin: var(--margin);	
 	overflow: hidden;
 }
 
-.product-image-desktop{
+.container div{
+	flex: 1 1 300px;
+}
+
+img{
+	width: 100%;
 	height: 100%;
 }
 
+.product-image-mobile{
+	display: none;
+}
+
 .container-product{
+	width: 100%; 
 	background-color: var(--neutral-color-white);
-	height: 100%;
-	padding: 35px;
 	font-family: var(--font-one);
+	padding: 35px;
 }
 
 .product-type{
@@ -56,14 +68,14 @@ main{
 	text-transform: uppercase;	
 	font-weight: 500;
 	color: var(--neutral-color-dark-grayish-blue);
-	margin-bottom: var(--margin-bottom);
+	margin-bottom: var(--margin);
 	letter-spacing: 5px;
 }
 
 .product-title{
 	font-size: var(--font-size-two);
 	font-family: var(--font-two);
-	margin-bottom: var(--margin-bottom);
+	margin-bottom: var(--margin);
 	color: black;
 	font-weight: 700;
 	line-height: 35px;
@@ -73,14 +85,14 @@ main{
 	font-size: var(--font-size-one);	
 	font-weight: 500;
 	line-height: 25px;
-	margin-bottom: var(--margin-bottom);
+	margin-bottom: var(--margin);
 }
 
 .prices{	
 	display: flex;
 	align-items: center;
 	font-family: var(--font-two);
-	margin-bottom: var(--margin-bottom);
+	margin-bottom: var(--margin);
 }
 .price-discount{
 	margin-right: 15px;
@@ -98,8 +110,7 @@ main{
 .btn-car{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	margin-bottom: var(--margin-bottom);
+	align-items: center;	
 	border-radius: var(--border);
 	background-color: var(--primary-color-dark-cyan);
 	color: var(--neutral-color-white);
@@ -119,4 +130,53 @@ main{
 
 svg.car-icon{
 	margin-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		height: 700px;
+		width: 450px;		
+	}
+
+	img{
+		width: 100%;
+	}
+
+	.product-image-desktop{
+		display: none;
+	}
+
+	.product-image-mobile{		
+		display: block;
+	}	
+
+	.btn-car{
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 375px){
+	.container{
+		height: 600px;
+		width: 450px;
+	}
+
+	.container-product{		
+		padding: 25px;
+		
+	}
+
+	.product-type,
+	.product-title,	
+	.btn-car{	
+		margin-bottom: var(--margin-mobile);		
+	}
+
+	.product-title{
+		line-height: 30px;
+	}
+
+	.price-discount{
+		margin-right: 25px
+	}
 }
