@@ -5,10 +5,18 @@ Esta é uma solução para o [Desafio do componente de cartão de visualização
 ## Índice
 
 - [Visão Geral](#visáo-geral)  
-  - [O Desáfio](#o-desáfio)  
+  - [O Desafio](#o-desafio)  
   - [Screenshot](#screenshot)   
 - [Meu Processo](#meu-processo)  
   - [Construído Com](#construído-com)  
   - [O Que Aprendi](#o-que-aprendi)
 - [Autor](#autor)
 - [Agradecimentos](#agradecimentos)
+
+## Visão Geral
+
+### O Desafio
+
+Os usuários devem ser capazes de:
+- Visualizar o layout ideal dependendo do tamanho da tela do dispositivo
+- Ver os estados de foco e foco para elementos interativos
