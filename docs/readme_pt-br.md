@@ -26,8 +26,12 @@ Os usuários devem ser capazes de:
 Desktop 1920px  
 ![](/screenshot/screenshot-desktop.png)
 
-Tablet 1024px  
-![](/screenshot/screenshot-tablet.png)
-
 Mobile 375px  
 ![](/screenshot/screenshot-mobile.png)
+
+## Meu Processo
+
+### Construído Com
+- HTML5 semântico
+- Variáveis CSS
+- Layout responsivo
