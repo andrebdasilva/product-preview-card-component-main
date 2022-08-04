@@ -20,3 +20,14 @@ Esta é uma solução para o [Desafio do componente de cartão de visualização
 Os usuários devem ser capazes de:
 - Visualizar o layout ideal dependendo do tamanho da tela do dispositivo
 - Ver os estados de foco e foco para elementos interativos
+
+### Screenshot
+
+Desktop 1920px  
+![](/screenshot/screenshot-desktop.png)
+
+Tablet 1024px  
+![](/screenshot/screenshot-tablet.png)
+
+Mobile 375px  
+![](/screenshot/screenshot-mobile.png)
