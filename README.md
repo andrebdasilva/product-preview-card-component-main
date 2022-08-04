@@ -27,8 +27,13 @@ Users should be able to:
 Desktop 1920px  
 ![](/screenshot/screenshot-desktop.png)
 
-Tablet 1024px  
-![](/screenshot/screenshot-tablet.png)
-
 Mobile 375px  
 ![](/screenshot/screenshot-mobile.png)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS variables
+- Responsive layout
