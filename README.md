@@ -45,7 +45,17 @@ Mobile 375px
 ### What I learned
 I was able to put into practice the semantic HTML in the structure of the components.  
 I reinforced the development of variables and media queries in CSS.  
+I used tag picture to improve performance in responsiveness and take the media responsibility I wanted in CSS.    
 
+```html
+<picture>
+
+  <source srcset="./images/image-product-desktop.jpg" media="(min-width: 768px)">
+
+  <img src="./images/image-product-mobile.jpg" alt="perfume" class="product-image-mobile">
+
+</picture>
+```
 ## Author
 - Frontend Mentor - [@andrebdasilva](https://www.frontendmentor.io/profile/andrebdasilva)
 
