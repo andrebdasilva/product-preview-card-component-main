@@ -131,7 +131,7 @@ svg.car-icon{
 
 @media screen and (max-width: 768px){
 	.container{
-		height: 700px;
+		height: auto;
 		width: 450px;	
 		flex-wrap: wrap;	
 	}
@@ -151,7 +151,7 @@ svg.car-icon{
 
 @media screen and (max-width: 375px){
 	.container{
-		height: 600px;
+		height: auto;
 		width: 450px;
 	}
 
@@ -160,8 +160,7 @@ svg.car-icon{
 	}
 
 	.product-type,
-	.product-title,	
-	.btn-car{	
+	.product-title{	
 		margin-bottom: var(--margin-mobile);		
 	}
 
