@@ -43,7 +43,17 @@ Mobile 375px
 ### O Que Aprendi
 Consegui colocar em prática o HTML semântico na estrutura dos componentes.  
 Reforcei o desenvolvimento de variáveis e media queries em CSS.  
+Usei tag picture para melhorar o desempenho na responsividade e tirar a responsabilidade do media queria no CSS.  
 
+```html
+<picture>
+
+  <source srcset="./images/image-product-desktop.jpg" media="(min-width: 768px)">
+
+  <img src="./images/image-product-mobile.jpg" alt="perfume" class="product-image-mobile">
+  
+</picture>
+```
 ## Autor
 - Frontend Mentor - [@andrebdasilva](https://www.frontendmentor.io/profile/andrebdasilva)
 
